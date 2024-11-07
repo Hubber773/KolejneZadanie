@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="Gray">
     <Grid>
-        <StackPanel>e</StackPanel>
+        <StackPanel></StackPanel>
     </Grid>
 </Window>

@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800" Background="Gray">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Name="txtTekst" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" SpellCheck.IsEnabled="True">
+            <TextBox.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="LightBlue" Offset="0"></GradientStop>
+                    <GradientStop Color="Lavender" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
     </Grid>
 </Window>

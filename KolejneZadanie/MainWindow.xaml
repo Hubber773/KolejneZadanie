@@ -40,9 +40,12 @@
             <Button Click="WyrownajDoLewej_Click">Wyrównaj do lewej</Button>
             <Button Click="WyrownajDoSrodka_Click">Wyrównaj do środka</Button>
             <Button Click="WyrownajDoPrawej_Click">Wyrównaj do prawej</Button>
-            <Button Click="Wyrownaj_Click">Justowanie</Button>
+            <Button Click="WyrownajJustowanie_Click">Justowanie</Button>
 
-            <ProgressBar Name="PasekPostepu" Minimum="0" Maximum="100" Height="20" Value="0" Margin="0,20,0,0"></ProgressBar>
+            <Grid Margin="20">
+                <ProgressBar Minimum="0" Maximum="100" Value="0" Name="PasekPostepu" />
+                <TextBlock Text="{Binding ElementName=PasekPostepu, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
         </StackPanel>
     </Grid>
 </Window>

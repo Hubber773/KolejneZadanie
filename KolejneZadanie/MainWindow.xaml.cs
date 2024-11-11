@@ -173,7 +173,7 @@ namespace KolejneZadanie
 
         private void WyrownajDoPrawej_Click(object sender, RoutedEventArgs e)
         {
-            txtTekst.TextAlignment = TextAlignment.Right;
+            txtTekst.TextAlignment = TextAlignment.Right;  // Tak często używam angielskiego że czasami zapominam że mam takie rzeczy po polsku pisać na lekcje tylko ja ten kod tak długo robie już że nie chce mi sie czegokolwiek zmieniać lub dodawać :D
             if (!isRightAlignUsed)
             {
                 isRightAlignUsed = true;
@@ -184,7 +184,7 @@ namespace KolejneZadanie
         private void Wyrownaj_Click(object sender, RoutedEventArgs e)
         {
             txtTekst.TextAlignment = TextAlignment.Justify;
-            if (!isJustifyUsed)
+            if (!isJustifyUsed)                                                                                                                                                                         // I will bring you JUSTICE!
             {
                 isJustifyUsed = true;
                 UpdateProgress();
@@ -193,7 +193,7 @@ namespace KolejneZadanie
 
         private void UpdateProgress() 
         {
-            if (PasekPostepu != null)
+            if (PasekPostepu != null) // Przez jakieś 15-30 minut próbuje znaleść sposób żeby jeden każdy postęp do paska postępu dawał jeden prostokąt zamiast kilku na raz ale nici z tego
             {
                 int count = 0;
                 if (isPogrubienieUsed) count++;

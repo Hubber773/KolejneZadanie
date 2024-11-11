@@ -20,5 +20,29 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <CheckBox Name="ChbPogrubienie" FontWeight="Bold" Checked="ChbPogrubienie_Checked" Unchecked="ChbPogrubienie_Checked">Pogrubienie</CheckBox>
+            <CheckBox Name="ChbKursywa" FontStyle="Italic" Checked="ChbKursywa_Checked" Unchecked="ChbKursywa_Checked">Kursywa</CheckBox>
+            <CheckBox Name="ChbPodkreslenie" Checked="ChbPodkreslenie_Checked" Unchecked="ChbPodkreslenie_Checked">Podkreślenie</CheckBox>
+
+            <RadioButton Name="CzerwonyKolor" Foreground="Red" GroupName="KolorTekstu" Checked="CzerwonyKolor_Checked">Czerwony</RadioButton>
+            <RadioButton Name="ZielonyKolor" Foreground="Green" GroupName="KolorTekstu" Checked="ZielonyKolor_Checked">Zielony</RadioButton>
+            <RadioButton Name="NiebieskiKolor" Foreground="Blue" GroupName="KolorTekstu" Checked="NiebieskiKolor_Checked">Niebieski</RadioButton>
+
+            <RadioButton Name="ArialCzcionka" FontFamily="Arial" GroupName="KrojCzcionki" Checked="ArialCzcionka_Checked">Arial</RadioButton>
+            <RadioButton Name="CalibriCzcionka" FontFamily="Calibri" GroupName="KrojCzcionki" Checked="CalibriCzcionka_Checked">Calibri</RadioButton>
+            <RadioButton Name="TimesNewRomanCzcionka" FontFamily="Times New Roman" GroupName="KrojCzcionki" Checked="TimesNewRomanCzcionka_Checked">Times New Roman</RadioButton>
+
+            <Label>Rozmiar Czcionki</Label>
+            <Slider Name="SuwakRozmiarCzcionki" Minimum="10" Maximum="50" ValueChanged="SuwakRozmiarCzcionki_ValueChanged" TickPlacement="BottomRight" TickFrequency="5"></Slider>
+
+            <Button Click="WyrownajDoLewej_Click">Wyrównaj do lewej</Button>
+            <Button Click="WyrownajDoSrodka_Click">Wyrównaj do środka</Button>
+            <Button Click="WyrownajDoPrawej_Click">Wyrównaj do prawej</Button>
+            <Button Click="Wyrownaj_Click">Justowanie</Button>
+
+            <ProgressBar Name="PasekPostepu" Minimum="0" Maximum="100" Height="20" Value="0" Margin="0,20,0,0"></ProgressBar>
+        </StackPanel>
     </Grid>
 </Window>

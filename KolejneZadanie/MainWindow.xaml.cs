@@ -181,7 +181,7 @@ namespace KolejneZadanie
             }
         }
 
-        private void Wyrownaj_Click(object sender, RoutedEventArgs e)
+        private void WyrownajJustowanie_Click(object sender, RoutedEventArgs e)
         {
             txtTekst.TextAlignment = TextAlignment.Justify;
             if (!isJustifyUsed)                                                                                                                                                                         // I will bring you JUSTICE!
